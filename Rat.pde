@@ -7,6 +7,7 @@ class Rat {
   int direction = 1;
   boolean lost = false;
   int level = 0;
+  int last;
   
   void Rat() {
   }
@@ -57,6 +58,7 @@ class Rat {
       direction = 1;
       speed = 4;
       x = displayWidth/2 -100;
+      last = rat.level;
     }
   }
   
