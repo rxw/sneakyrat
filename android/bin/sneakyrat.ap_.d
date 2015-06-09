@@ -1,0 +1,20 @@
+/home/tato/sketchbook/sneakyrat/android/bin/sneakyrat.ap_ \
+ : /home/tato/sketchbook/sneakyrat/android/res/drawable-xhdpi/icon.png \
+/home/tato/sketchbook/sneakyrat/android/res/drawable-hdpi/icon.png \
+/home/tato/sketchbook/sneakyrat/android/res/layout/main.xml \
+/home/tato/sketchbook/sneakyrat/android/res/drawable/icon.png \
+/home/tato/sketchbook/sneakyrat/android/res/drawable-ldpi/icon.png \
+/home/tato/sketchbook/sneakyrat/android/bin/res/drawable-xhdpi/icon.png \
+/home/tato/sketchbook/sneakyrat/android/bin/res/drawable-hdpi/icon.png \
+/home/tato/sketchbook/sneakyrat/android/bin/res/drawable/icon.png \
+/home/tato/sketchbook/sneakyrat/android/bin/res/drawable-ldpi/icon.png \
+/home/tato/sketchbook/sneakyrat/android/assets/square.ttf \
+/home/tato/sketchbook/sneakyrat/android/assets/Rat1.xcf \
+/home/tato/sketchbook/sneakyrat/android/assets/RatIn1.png \
+/home/tato/sketchbook/sneakyrat/android/assets/Rat2.xcf \
+/home/tato/sketchbook/sneakyrat/android/assets/RatIn2.png \
+/home/tato/sketchbook/sneakyrat/android/assets/Rat2.png \
+/home/tato/sketchbook/sneakyrat/android/assets/icon.xcf \
+/home/tato/sketchbook/sneakyrat/android/assets/play.png \
+/home/tato/sketchbook/sneakyrat/android/assets/Rat1.png \
+/home/tato/sketchbook/sneakyrat/android/bin/AndroidManifest.xml \

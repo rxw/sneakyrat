@@ -10,7 +10,7 @@ class Lamp {
   }
   
   void run(float _x) {
-    shift = _x * 50;
+    shift = _x * 60;
     lamparea[0] = x+200-shift;
     lamparea[1] = x-200-shift;
     display();

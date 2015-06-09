@@ -21,7 +21,6 @@ float sensor;
 
 PFont square;
 PImage playbutton;
-PImage youlost;
 boolean play =  false;
 int buttonx;
 int buttony;
@@ -39,6 +38,8 @@ void setup() {
   lamp = new Lamp();
   rat = new Rat();
   orientation(PORTRAIT);
+  // Create play button
+  playbutton = loadImage("play.png");
   // Create the font
   square = createFont("square.ttf",120);
   textFont(square,150);
@@ -62,29 +63,19 @@ void setup() {
     output.flush(); // Writes the remaining data to the file
     output.close(); // Finishes the file
   }
+  textAlign(CENTER);
 }
 
 void draw() {
   background(50);
   // Accelerometer data coming in
   sensor = accelData[0];
-  // Check if user presses play button
-  if(!play) {
-    textAlign(CENTER);
-    text("PLAY",buttonx, buttony);
-    if(mousePressed && (mouseX > buttonx-200 && mouseX < buttonx + 200) && (mouseY > buttony-100 && mouseY < buttony + 100)) {
-      // if he does, set state of playing and set game lost to false
-      play = true;
-      rat.lost = false;
-    }
-  }
   // Always display best score
   text("best: "+best,buttonx, buttony+700);
   // Start the rat if pressed play
   if(!rat.lost && play) {
     rat.run(lamp.lamparea[1], lamp.lamparea[0]);
     // Set current level text
-    textAlign(CENTER);
     text(rat.level,buttonx, buttony+400);
   } else if(rat.lost) { // If lost set play to false and save level
     play = false;
@@ -105,6 +96,16 @@ void draw() {
   }
   // Run the lamp with accelerometer parameters
   lamp.run(sensor);
+  // Check if user presses play button
+  if(!play) {
+    imageMode(CENTER);
+    image(playbutton,buttonx, buttony);
+    if(mousePressed && (mouseX > buttonx-200 && mouseX < buttonx + 200) && (mouseY > buttony-100 && mouseY < buttony + 100)) {
+      // if he does, set state of playing and set game lost to false
+      play = true;
+      rat.lost = false;
+    }
+  }
 }
 
 // Accelerometer things I copied from the interwebs

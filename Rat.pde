@@ -20,7 +20,7 @@ class Rat {
   }
   
   void display() {
-    image(img, x, displayHeight-125);
+    image(img, x, displayHeight-70);
   }
   
   void move() {
@@ -45,7 +45,7 @@ class Rat {
     }
     position++;
     x += speed * direction;
-    if(x+200 > displayWidth || x < 0) {
+    if(x+100 > displayWidth || x < 100) {
       direction = -direction;
       speed += .5;
       level += 1;
@@ -53,7 +53,7 @@ class Rat {
   }
   
   void lost(float lightone, float lighttwo) {
-    if(x+150 < lightone || x+150 > lighttwo) {
+    if(x+50 < lightone || x > lighttwo) {
       lost = true;
       direction = 1;
       speed = 4;
